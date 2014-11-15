@@ -1,25 +1,32 @@
 var player = (function () {
-	var playerName, playerScore;
+	var playerName;
+	var playerScore = 0;
+
+	var getPlayerName = function () {
+		return playerName;
+	};
+
+	var setPlayerName = function (name) {
+		playerName = name;
+	};
+
+	var getScore = function () {
+		return playerScore;
+	};
 
 	var _increaseScore = function (score) {
-		// increase score
+		playerScore += score;
+		return playerScore;
 	};
 
 	var checkAnswer = function (point) {
 		// check to see if answer is correct
 	};
 
-	var setPlayerName = function (name) {
-		// set player name
-	};
-
-	var getPlayerName = function () {
-		// get player name
-	};
-
 	return {
 		setPlayerName : setPlayerName,
 		getPlayerName : getPlayerName,
+		getScore : getScore,
 		checkAnswer : checkAnswer
 	}
 }());
