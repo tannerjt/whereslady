@@ -14,9 +14,13 @@ var game = (function () {
 	};
 
 	var _setCurrentAnswer = function(idx){
-		currentHintIndex = 0;
-		currentAnswer = answers[idx];
-		showHint();
+		if (idx < answers.length) {
+			currentHintIndex = 0;
+			currentAnswer = answers[idx];
+			showHint();
+		} else {
+			alert("GAME OVER");
+		}
 	};
 
 	var getNextAnswer = function(){
