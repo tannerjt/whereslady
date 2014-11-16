@@ -6,15 +6,44 @@
 	<link rel="stylesheet" type="text/css" href="./css/style.css">
 </head>
 <body>
-	<h1>whereslady</h1>
-	<h3>An interactive mystery game</h3>
+	<div id="details">
+		<h3>Wheres Lady?</h3>
+		<div id="prompt">
+			<label for="name">Name: </label>
+			<input type="text" placeholder="Your NickName" id="name" class="name">
+			<button id="start">Start</button>
+			<p>Lady is an adventurous and somewhat mischevious dog.  She likes
+				to wander off and follow her nose.  Once she wants to come home, she will give you hints on where to fine her.  Help find Lady and bring her back home!</p>
+		</div>
+
+		<div id="gameDetails">
+			<!-- player details -->
+			<div id="playerDetails">
+				<h3 id="playerName">
+					
+				</h3>
+				<h3 id="playerScore">
+						
+				</h3>
+			</div>
+
+			<!-- hints -->
+			<div id="hint">
+				
+			</div>
+		</div>
+	</div>
+
 	<div id="map">
 	
 	</div>
+<script src="./assets/jquery/dist/jquery.min.js"></script>
 <script src="./assets/leaflet-0.7.3/leaflet.js"></script>
 <script src="./js/map.js"></script>
 <script src="./js/player.js"></script>
 <script src="./js/answers.js"></script>
 <script src="./js/gameController.js"></script>
+<script src="./js/ui.js"></script>
+<script src="./js/main.js"></script>
 </body>
 </html>
