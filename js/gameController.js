@@ -1,6 +1,7 @@
 var game = (function () {
 	var currentAnswer, currentAnswerIndex;
 	var currentHintIndex;
+	var maxPointDistance = 500;
 
 	var start = function () {
 		currentAnswerIndex = 0;
@@ -24,10 +25,16 @@ var game = (function () {
 	var showHint = function(){
 		UI.showHint(currentAnswer.hint[currentHintIndex]);
 		currentHintIndex++;
-	}
+	};
 
-	var _mapClick = function(){
+	var _checkDistance = function (latlng) {
+		return distance(latlng.lat, latlng.lng, 
+				currentAnswer.location[0], currentAnswer.location[1], 'M');
+	};
 
+	var _mapClick = function(e){
+		var distance = _checkDistance(e.latlng);
+		
 	};
 
 	return {
