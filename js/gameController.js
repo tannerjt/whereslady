@@ -6,6 +6,7 @@ var game = (function () {
 		currentAnswerIndex = 0;
 		_setCurrentAnswer(currentAnswerIndex);
 		showHint();
+		map.on("click", _mapClick)
 	};
 
 	var getCurrentAnswer = function (){
@@ -24,6 +25,10 @@ var game = (function () {
 		UI.showHint(currentAnswer.hint[currentHintIndex]);
 		currentHintIndex++;
 	}
+
+	var _mapClick = function(){
+
+	};
 
 	return {
 		start : start,
