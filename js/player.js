@@ -14,19 +14,15 @@ var player = (function () {
 		return playerScore;
 	};
 
-	var _increaseScore = function (score) {
+	var increaseScore = function (score) {
 		playerScore += score;
 		return playerScore;
-	};
-
-	var checkAnswer = function (point) {
-		// check to see if answer is correct
 	};
 
 	return {
 		setPlayerName : setPlayerName,
 		getPlayerName : getPlayerName,
 		getScore : getScore,
-		checkAnswer : checkAnswer
+		increaseScore : increaseScore
 	}
 }());
