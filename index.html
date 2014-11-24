@@ -1,42 +1,50 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Whereslady</title>
+	<title>Where'slady</title>
 	<link rel="stylesheet" href="./assets/leaflet-0.7.3/leaflet.css">
 	<link rel="stylesheet" type="text/css" href="./css/style.css">
 </head>
 <body>
-	<div id="details">
-		<h3>Wheres Lady?</h3>
-		<div id="prompt">
-			<label for="name">Name: </label>
-			<input type="text" placeholder="Your NickName" id="name" class="name">
-			<button id="start">Start</button>
-			<p>Lady is an adventurous and somewhat mischevious dog.  She likes
-				to wander off and follow her nose.  Once she wants to come home, she will give you hints on where to fine her.  Help find Lady and bring her back home!</p>
-		</div>
+	<section id="details">
+		<h1>Where's Lady?</h1>
+		<p>Lady is an adventurous and somewhat mischevious dog.  She likes
+		to wander off and follow her nose.  Once she wants to come home, she will give you hints on where to find her.  Help find Lady and bring her back home!</p>
+		<form id="prompt">
+			Name: <input type="text" placeholder="Your NickName" id="name" name="name" required>
+			<input type="submit" id="start">	
+		</form>
 
-		<div id="gameDetails">
+		<section id="gameDetails">
 			<!-- player details -->
-			<div id="playerDetails">
-				<h3 id="playerName">
-					
-				</h3>
-				<h3 id="playerScore">
-						
-				</h3>
-			</div>
+			<section id="playerDetails">
+				<div>
+					<h3 class="inline">Player:</h3>
+					<h3 id="playerName"class="inline"></h3>
+				</div>
 
-			<!-- hints -->
-			<div id="hint">
+				<div>
+					<h3 id="score" class="inline">Score:</h3>
+					<h3 id="playerScore" class="inline"> </h3>
+				</div>	
+			</section>
+
+			<div id="hints">
+				<!-- hints -->
+				<h4 id="hintTitle" class="inline">Hint:</h4>
+				<section id="hint" class="inline">
+				</section>
+			</div>
 				
-			</div>
-		</div>
-	</div>
+		</section>
+	</section>
 
-	<div id="map">
+	<section id="map">
 	
-	</div>
+	</section>
+	<footer id="footer">
+		<p> &copy Tanner Development</p>
+	</footer>
 <script src="./assets/jquery/dist/jquery.min.js"></script>
 <script src="./assets/leaflet-0.7.3/leaflet.js"></script>
 <script src="./assets/distance.js"></script>
@@ -46,5 +54,6 @@
 <script src="./js/gameController.js"></script>
 <script src="./js/ui.js"></script>
 <script src="./js/main.js"></script>
+<script src="./js/test.js"></script>
 </body>
 </html>

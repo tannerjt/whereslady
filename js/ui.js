@@ -13,6 +13,7 @@ var UI = {
 
 	showHint : function (hint) {
 		// show hint in DOM
+		
 		$("#hint").html(hint);
 	}
 
