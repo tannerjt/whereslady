@@ -14,12 +14,13 @@ html, body {
 #details {
 	z-index : 99;
 	position : absolute;
-	top : 25px;
+	top : 30px;
 	left : 45px;
 	background : #ffffff;
-	padding : 15px 20px 15px 20px;
+	padding : 20px 20px 15px 20px;
 	width : 300px;
 	border: 1px solid gray;
+	border-radius: 10px;
 }
 
 #footer {
@@ -50,7 +51,7 @@ h1 {
 
 .inline {
 	display: inline;
-	padding: 10px 10px 10px 3px;
+	padding: 10px 8px 10px 1px;
 }
 
 #hints {
