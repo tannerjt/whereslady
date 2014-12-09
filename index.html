@@ -2,10 +2,21 @@
 <html>
 <head>
 	<title>Where'slady</title>
+	 <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <!-- Custom CSS -->
 	<link rel="stylesheet" href="./assets/leaflet-0.7.3/leaflet.css">
 	<link rel="stylesheet" type="text/css" href="./css/style.css">
 </head>
+
 <body>
+	<!-- Description section -->
 	<section id="details">
 		<h1>Where's Lady?</h1>
 		<p>Lady is an adventurous and somewhat mischevious dog.  She likes
@@ -14,7 +25,8 @@
 			Name: <input type="text" placeholder="Your NickName" id="name" name="name" required>
 			<input type="submit" id="start">	
 		</form>
-
+		
+		<!-- Player, Score, and Hints sections -->
 		<section id="gameDetails">
 			<!-- player details -->
 			<section id="playerDetails">
@@ -30,21 +42,21 @@
 			</section>
 
 			<div id="hints">
-				<!-- hints -->
+				<!-- Hints -->
 				<h4 id="hintTitle" class="inline">Hint:</h4>
 				<section id="hint" class="inline">
 				</section>
-			</div>
-				
+			</div>			
 		</section>
 	</section>
 
-	<section id="map">
-	
-	</section>
+	<!-- Map Component -->
+	<section id="map"></section>
+
 	<footer id="footer">
 		<p> &copy Tanner Development</p>
 	</footer>
+
 <script src="./assets/jquery/dist/jquery.min.js"></script>
 <script src="./assets/leaflet-0.7.3/leaflet.js"></script>
 <script src="./assets/distance.js"></script>
@@ -55,5 +67,7 @@
 <script src="./js/ui.js"></script>
 <script src="./js/main.js"></script>
 <script src="./js/test.js"></script>
+<!-- Bootstrap Core JavaScript -->
+<script src="js/bootstrap.min.js"></script>
 </body>
 </html>
