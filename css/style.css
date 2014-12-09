@@ -17,8 +17,8 @@ html, body {
 	top : 25px;
 	left : 45px;
 	background : #ffffff;
-	padding : 5px 20px 15px 20px;
-	width : 250px;
+	padding : 15px 20px 15px 20px;
+	width : 300px;
 }
 
 #footer {
@@ -32,10 +32,15 @@ html, body {
 	font-size: 16px;
 }
 
+img {
+	display: block;
+    margin-left: auto;
+    margin-right: auto }
+}
+
 h1 {
 	text-align: center;
-	border-bottom: 1px solid black;
-	padding-bottom: 2px;
+	padding-bottom: 8px;
 }
 
 #prompt {
@@ -44,13 +49,18 @@ h1 {
 
 .inline {
 	display: inline;
-	padding: 10px 5px 10px 0px;
+	padding: 10px 10px 10px 3px;
 }
 
 #hints {
-	border: 1px solid #B0B0B0;
-	background-color: #F8F8F8;
 	padding: 10px 8px 10px 8px;
-	margin-top: 10px;
-	margin-bottom: 10px;
+	margin-top: 15px;
+	margin-bottom: 2px;
 }
+
+h3 {
+	padding-top: 5px;
+	margin-top: 5px;
+}
+
+

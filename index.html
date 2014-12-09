@@ -1,6 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
 	<title>Where'slady</title>
 	 <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -18,7 +25,9 @@
 <body>
 	<!-- Description section -->
 	<section id="details">
+		<img src="images/laylady.jpeg" alt="Lady">
 		<h1>Where's Lady?</h1>
+
 		<p>Lady is an adventurous and somewhat mischevious dog.  She likes
 		to wander off and follow her nose.  Once she wants to come home, she will give you hints on where to find her.  Help find Lady and bring her back home!</p>
 		<form id="prompt">
@@ -30,18 +39,18 @@
 		<section id="gameDetails">
 			<!-- player details -->
 			<section id="playerDetails">
-				<div>
-					<h3 class="inline">Player:</h3>
+				<div>				
+					<h4 class="inline"><span class="label label-primary"> Player:</span></h4>
 					<h3 id="playerName"class="inline"></h3>
 				</div>
 
 				<div>
-					<h3 id="score" class="inline">Score:</h3>
+					<h4 id="score" class="inline"><span class="label label-success">Score:</span></h4>
 					<h3 id="playerScore" class="inline"> </h3>
 				</div>	
 			</section>
 
-			<div id="hints">
+			<div id="hints" class="well well-lg">
 				<!-- Hints -->
 				<h4 id="hintTitle" class="inline">Hint:</h4>
 				<section id="hint" class="inline">

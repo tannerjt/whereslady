@@ -3,9 +3,9 @@ var answers = [
 	{
 		"description" : "Timberline Lodge",
 		"hint" : [
-			"redrum",
-			"you can ski here, or ride the sky mile in the summer",
-			"the air is mighty thin here"
+			"Redrum",
+			"You can ski here, or ride the sky mile in the summer",
+			"The air is mighty thin here"
 		],
 		"location" : [45.331085, -121.711224]
 	}, {
