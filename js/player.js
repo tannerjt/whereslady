@@ -1,7 +1,6 @@
 var player = (function () {
 	var playerName;
 	var playerScore = 0;
-	//var maxScore = 100;
 
 	var getPlayerName = function () {
 		return playerName;

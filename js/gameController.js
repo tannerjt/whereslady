@@ -22,11 +22,15 @@ var game = (function () {
 			currentAnswer = answers[idx];
 			maxScore = (idx + 1) * 100;
 			UI.updateMaxScore(maxScore);
-			UI.showGameProgress(idx, answers.length);
+			// insert code to invoke update progress bar updateGameProgress method
 			showHint();
 		} else {
 			alert("GAME OVER");
 		}
+	};
+
+	var updateGameProgress = function () {
+		// code to update game progress bar
 	};
 
 	var getNextAnswer = function(){

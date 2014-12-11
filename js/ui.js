@@ -26,8 +26,8 @@ var UI = {
 		$("#hintNum").html("(" + hintNum + "/" + totalHints + "):");
 	},
 
-	showGameProgress : function (idx, total) {
-		// update game progress in DOM
-		$("gameProgress").html("(" + idx + "/" + total + ")");
+	showGameProgress : function () {
+		// dynamically update progress bar
+		// insert code to update progress bar
 	}
 };
