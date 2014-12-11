@@ -22,6 +22,7 @@ var game = (function () {
 			currentAnswer = answers[idx];
 			maxScore = (idx + 1) * 100;
 			UI.updateMaxScore(maxScore);
+			UI.showGameProgress(idx, answers.length);
 			showHint();
 		} else {
 			alert("GAME OVER");
@@ -37,6 +38,7 @@ var game = (function () {
 	var showHint = function(){
 		if (currentHintIndex <= currentAnswer.hint.length - 1) {
 			UI.showHint(currentAnswer.hint[currentHintIndex]);
+			UI.showHintNum(currentHintIndex + 1, currentAnswer.hint.length);
 			currentHintIndex++;
 		} else {
 			alert("No more hints.");

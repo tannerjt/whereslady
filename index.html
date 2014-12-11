@@ -8,7 +8,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-	<title>Where'slady</title>
+	<title>Where's Lady</title>
 	 <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -44,18 +44,25 @@
 				</div>
 
 				<div>
-					<h4 id="score" class="inline"><span class="label label-success">Score:</span></h4>
+					<h4 id="score" class="inline"><span class="label label-primary">Score:</span></h4>
 					<h3 id="playerScore" class="inline"></h3>
 					<h3 class="inline">/</h3>
 					<h3 id="maxScore" class="inline"></h3>
 				</div>	
 			</section>
-
+			<!-- Hints -->
 			<div id="hints" class="well well-lg">
-				<!-- Hints -->
-				<h4 id="hintTitle" class="inline">Hint:</h4>
-				<section id="hint" class="inline">
-				</section>
+				<h4 id="hintTitle" class="inline">Hint</h4>
+				<h5 id="hintNum" class="inline"></h5>
+				<h5 id="hint" class="inline"></h5>
+				
+
+			</div>
+			<!-- Progress Bar -->
+			<div class="Progress">
+				<div id="gameProgress" class="progress-bar progress-bar-success progress-bar-striped" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 100%">
+    			100% Complete
+  				</div>
 			</div>			
 		</section>
 	</section>

@@ -17,9 +17,17 @@ var UI = {
 	},
 
 	showHint : function (hint) {
-		// show hint in DOM
-		
+		// show hint in DOM	
 		$("#hint").html(hint);
-	}
+	},
 
+	showHintNum : function (hintNum, totalHints) {
+		// update hint number in DOM
+		$("#hintNum").html("(" + hintNum + "/" + totalHints + "):");
+	},
+
+	showGameProgress : function (idx, total) {
+		// update game progress in DOM
+		$("gameProgress").html("(" + idx + "/" + total + ")");
+	}
 };
