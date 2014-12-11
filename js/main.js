@@ -17,4 +17,8 @@ $("#start").on('click', function (e) {
 	UI.updateScore(player.getScore());
 	// Initialize game
 	game.start();
+
+	$(function () {
+  	$('[data-toggle="tooltip"]').tooltip()
+})
 })
