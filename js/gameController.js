@@ -4,6 +4,7 @@ var game = (function () {
 	var maxPointDistance = 4;	//miles
 	var clickLocations = [];
 	var markerLocation = undefined;
+	var maxScore;
 
 	var start = function () {
 		currentAnswerIndex = 0;
@@ -19,6 +20,8 @@ var game = (function () {
 		if (idx < answers.length) {
 			currentHintIndex = 0;
 			currentAnswer = answers[idx];
+			maxScore = (idx + 1) * 100;
+			UI.updateMaxScore(maxScore);
 			showHint();
 		} else {
 			alert("GAME OVER");

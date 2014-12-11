@@ -11,6 +11,11 @@ var UI = {
 		$("#playerScore").html(score);
 	},
 
+	updateMaxScore : function (maxScore) {
+		// update max score in DOM
+		$("#maxScore").html(maxScore);
+	},
+
 	showHint : function (hint) {
 		// show hint in DOM
 		
