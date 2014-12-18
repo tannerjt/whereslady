@@ -26,8 +26,9 @@ var UI = {
 		$("#hintNum").html("(" + hintNum + "/" + totalHints + "):");
 	},
 
-	showGameProgress : function () {
+	showGameProgress : function (answerIndex, totalAnswers) {
 		// dynamically update progress bar
-		// insert code to update progress bar
+		var percent = ((answerIndex)/totalAnswers).toFixed(2) * 100;
+		$('#gameProgress').html(percent + "%").css("width", percent + "%");
 	}
 };
