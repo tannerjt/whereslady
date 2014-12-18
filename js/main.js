@@ -1,4 +1,6 @@
 $("#gameDetails").hide();
+// Show welcome modal
+UI.showWelcomeModal("#welcome-modal");
 
 // set player name when user clicks start
 $("#start").on('click', function (e) {

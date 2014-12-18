@@ -1,6 +1,10 @@
 // handle updating of DOM UI
 var UI = {
 	
+	showWelcomeModal : function (elem) {
+		$(elem).modal('show');
+	},
+	
 	setPlayerName : function (name) {
 		// update player name in DOM
 		$("#playerName").html(name);
