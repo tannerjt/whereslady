@@ -27,13 +27,7 @@
 	<section id="details">
 		<img src="images/laylady.jpeg" alt="Lady" class="img-rounded">
 		<h1>Where's Lady?</h1>
-		<p>Lady is an adventurous and somewhat mischevious hound dog.  She likes
-		to wander off and follow her nose.  Once she wants to come home, she'll give you hints on where to find her.  <a href="#" data-toggle="tooltip" data-placement="bottom" title="Zoom in and out on the map as needed to select the location described in the Hint below.  ">Help find Lady</a> and bring her back home!</p>
-		<form id="prompt">
-			Name: <input type="text" placeholder="Your NickName" id="name" name="name" required>
-			<input type="submit" id="start">	
-		</form>
-		
+		<a href="#" data-toggle="tooltip" data-placement="bottom" title="Zoom in and out on the map as needed to select the location described in the Hint below.">Help find Lady</a>	
 		<!-- Player, Score, and Hints sections -->
 		<section id="gameDetails">
 			<!-- player details -->
@@ -82,10 +76,17 @@
 					<h4 class="modal-title">Where's Lady?</h4>
 				</div>
 				<div class="modal-body">
-					
+					<p>Lady is an adventurous and somewhat mischevious hound dog.  She likes
+					to wander off and follow her nose.  Once she wants to come home, she'll give you hints on where to find her.  <a href="#" data-toggle="tooltip" data-placement="bottom" title="Zoom in and out on the map as needed to select the location described in the Hint below.">Help find Lady</a> and bring her back home!</p>
+					<label for="name">Name:</label>
+					<input type="text" placeholder="Your NickName" class="form-control" id="name" name="name">
+					<div class="alert alert-danger" role="alert" id="nameAlert">Please enter a username!</div>
+
 				</div>
 				<div class="modal-footer">
-					<button type="button" id="" class="btn btn-primary">Start</button>
+					<button type="button" id="start" class="close">
+					Start
+  					</button>
 				</div>
 			</div><!-- /.modal-content -->
 		</div><!-- /.modal-dialog -->
@@ -102,6 +103,6 @@
 <script src="./js/gameController.js"></script>
 <script src="./js/ui.js"></script>
 <script src="./js/main.js"></script>
-<script src="./js/test.js"></script>
+<!--<script src="./js/test.js"></script>-->
 </body>
 </html>

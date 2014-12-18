@@ -76,5 +76,12 @@ h3 {
 	padding-left: 5px;
 }
 
+#nameAlert {
+	padding: 3px;
+	margin: 10px 0 2px 0;
+	display: none;
+}
+
+
 
 
