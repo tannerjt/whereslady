@@ -34,5 +34,17 @@ var UI = {
 		// dynamically update progress bar
 		var percent = ((answerIndex)/totalAnswers).toFixed(2) * 100;
 		$('#gameProgress').html(percent + "%").css("width", percent + "%");
+	},
+
+	showSuccessModal : function (elem) {
+		$(elem).modal('show');
+	},
+
+	showOopsModal : function (elem) {
+		$(elem).modal('show');
+	},
+
+	showGameOverModal : function (elem) {
+		$(elem).modal('show');
 	}
 };

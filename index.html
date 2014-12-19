@@ -27,7 +27,7 @@
 	<section id="details">
 		<img src="images/laylady.jpeg" alt="Lady" class="img-rounded">
 		<h1>Where's Lady?</h1>
-		<a href="#" data-toggle="tooltip" data-placement="bottom" title="Zoom in and out on the map as needed to select the location described in the Hint below.">Help find Lady</a>	
+		<a href="#" data-toggle="tooltip" data-placement="bottom" title="Zoom in and out on the map as needed to select the location described in the Hint below.">Help find Lady</a>
 		<!-- Player, Score, and Hints sections -->
 		<section id="gameDetails">
 			<!-- player details -->
@@ -86,6 +86,60 @@
 				<div class="modal-footer">
 					<button type="button" id="start" class="close">
 					Start
+  					</button>
+				</div>
+			</div><!-- /.modal-content -->
+		</div><!-- /.modal-dialog -->
+	</div><!-- /.modal -->
+
+	<div class="modal fade" id="success-modal">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h4 class="modal-title">Success</h4>
+				</div>
+				<div class="modal-body">
+					<p>You've found Lady!</p>
+				</div>
+				<div class="modal-footer">
+					<button type="button" id="continue" class="close">
+					Continue
+  					</button>
+				</div>
+			</div><!-- /.modal-content -->
+		</div><!-- /.modal-dialog -->
+	</div><!-- /.modal -->
+
+	<div class="modal fade" id="oops-modal">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h4 class="modal-title">Oops!</h4>
+				</div>
+				<div class="modal-body">
+					<p>Nice try, but no dice!</p>
+				</div>
+				<div class="modal-footer">
+					<button type="button" id="tryAgain" class="close">
+					Continue
+  					</button>
+				</div>
+			</div><!-- /.modal-content -->
+		</div><!-- /.modal-dialog -->
+	</div><!-- /.modal -->
+
+	<div class="modal fade" id="gameOver-modal">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h4 class="modal-title">Game Over</h4>
+				</div>
+				<div class="modal-body">
+					<p>Thanks for playing!</p>
+				</div>
+				<div class="modal-footer">
+					<button type="button" id="exit" class="close">
+					Exit
   					</button>
 				</div>
 			</div><!-- /.modal-content -->

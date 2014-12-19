@@ -24,9 +24,11 @@ var game = (function () {
 			UI.updateMaxScore(maxScore);
 			showHint();
 		} else {
-			alert("GAME OVER");
+			UI.showGameOverModal("#gameOver-modal");
+			$("#exit").on('click', function (e) {
+				$("#gameOver-modal").modal("hide");
+			})
 		}
-		// insert code to invoke update progress bar updateGameProgress method
 		_updateGameProgress();
 	};
 
@@ -88,7 +90,11 @@ var game = (function () {
 					fillColor : "#61B200",
 					fillOpacity : 0.2
 				});
-				alert("Congrats! You found Lady.");
+				UI.showSuccessModal("#success-modal");
+				$("#continue").on('click', function (e) {
+					$("#success-modal").modal("hide");
+				})
+
 				showLocation();
 				_setCurrentAnswer(getNextAnswer());
 			} else {
@@ -98,7 +104,10 @@ var game = (function () {
 					color : "#BF0404",
 					fillOpacity : 0.2
 				})
-				alert("Nice try! No dice.");
+				UI.showOopsModal("#oops-modal");
+				$("#tryAgain").on('click', function (e) {
+					$("#oops-modal").modal("hide");
+				})
 			}
 		}
 
