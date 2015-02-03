@@ -109,7 +109,11 @@ var game = (function () {
 					fillColor : "#61B200",
 					fillOpacity : 0.2
 				});
-				$("#description").html(currentAnswer.description);
+				$("#description").html(
+					'<img class="loc-image" src="./images/items/' + currentAnswer.image + '" />'
+					+ '<p>' + currentAnswer.content + '</p>'
+					+ '<p>' + currentAnswer.credit + '</p>'
+				);
 				UI.showSuccessModal("#success-modal");
 				$("#continue").on('click', function (e) {
 					$("#success-modal").modal("hide");
