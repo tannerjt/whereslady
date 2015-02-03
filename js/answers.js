@@ -1,7 +1,7 @@
 // [locationObj, locationObj]
 var answers = [
 	{
-		"description" : "Timberline Lodge",
+		"description" : "She's hanging out at Timberline Lodge",
 		"hint" : [
 			"Redrum.  Redrum.",
 			"You can ski here, or ride the sky mile in the summer",
@@ -12,7 +12,7 @@ var answers = [
 		"credit" : "Photo by <a href='https://www.flickr.com/photos/ginsnob/2274369801/in/photolist-4sYJUr-4t3Kq5-njAW6-o63yVx-nLMJpp-nLLTUw-nLM3zf-cSjTQ5-cSjPXL-ayGyWw-ayDU7K-ayDU4e-ayGyPC-ayGyMw-ayGyKu-ayGyGC-ayDTS8-ayGyCo-ayGyAY-ayGyzC-ayGywN-ayDTGk-ayDTEn-ayGyr7-ayGyhC-ayGygd-ayDTqc-ayDTnV-ayDTmH-ayGy83-ayGy5w-ayGy25-ayDTdg-ayGxXh-ayDT6V-ayDT5c-ayDT36-ayGxMm-ayGxHw-ayGxFC-ayDSSg-ayGxC3-ayDSLv-ayDSJV-ayDSHc-ayDSFr-ayGxs5-ayGxoQ-ayGxn5-ayGxk3' target='_blank'>Chris Palmer</a>",
 		"content" : "Timberline lodge, located on the south side of Mount Hood was built in the late 1930's.  The exterior of the lodge can be seen in The Shining.  View more on <a href='http://en.wikipedia.org/wiki/Timberline_Lodge' target='_blank'>Wikipedia</a>."
 	}, {
-		"description" : "Cape Kiwanda, Pacific City",
+		"description" : "She's getting some sun in Cape Kiwanda, Pacific City",
 		"hint" : [
 			"You'll get winded climbing this sand dune",
 			"Is that a rock out there?",
