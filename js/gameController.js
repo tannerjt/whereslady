@@ -5,6 +5,7 @@ var game = (function () {
 	var clickLocations = [];
 	var markerLocation = undefined;
 	var maxScore;
+	var gameOver = false;
 
 	var start = function () {
 		currentAnswerIndex = 0;
@@ -27,7 +28,8 @@ var game = (function () {
 			UI.showGameOverModal("#gameOver-modal");
 			$("#exit").on('click', function (e) {
 				$("#gameOver-modal").modal("hide");
-			})
+			});
+			gameOver = true;
 		}
 		_updateGameProgress();
 	};
@@ -48,11 +50,28 @@ var game = (function () {
 			UI.showHint(currentAnswer.hint[currentHintIndex]);
 			UI.showHintNum(currentHintIndex + 1, currentAnswer.hint.length);
 			currentHintIndex++;
+			return true;
 		} else {
-			alert("No more hints.");
 			_setCurrentAnswer(getNextAnswer());
+
+			
+			if(!gameOver) {
+				$("#failMessage").text("Sorry, no more hints.  Let's try a new location.");
+				UI.showOopsModal("#oops-modal");
+				$("#tryAgain").on('click', function (e) {
+					$("#oops-modal").modal("hide");
+				});
+			}
+
+			return false;
 		}
 	};
+
+	var failMessages = [
+		"Nice try, but no dice!",
+		"Lady's not there, but keep looking.",
+		"Don't give up!  Keep looking."
+	];
 
 	var _checkDistance = function (latlng) {
 		return distance(latlng.lat, latlng.lng, 
@@ -90,24 +109,29 @@ var game = (function () {
 					fillColor : "#61B200",
 					fillOpacity : 0.2
 				});
+				$("#description").html(currentAnswer.description);
 				UI.showSuccessModal("#success-modal");
 				$("#continue").on('click', function (e) {
 					$("#success-modal").modal("hide");
-				})
+					_setCurrentAnswer(getNextAnswer());
+					$("#continue").off('click');
+				});
 
 				showLocation();
-				_setCurrentAnswer(getNextAnswer());
 			} else {
-				showHint();
+				if(!showHint()) return;
 				location.setStyle({
 					fillColor : "#400101",
 					color : "#BF0404",
 					fillOpacity : 0.2
-				})
+				});
+
+				$("#failMessage").text(failMessages[Math.floor(Math.random() * 3)]);
 				UI.showOopsModal("#oops-modal");
+
 				$("#tryAgain").on('click', function (e) {
 					$("#oops-modal").modal("hide");
-				})
+				});
 			}
 		}
 
