@@ -2,6 +2,16 @@ $("#gameDetails").hide();
 // Show welcome modal
 UI.showWelcomeModal("#welcome-modal");
 
+$("#name").on('keypress', function (e) {
+	// start game on enter (key code 13)
+	if( e.charCode == 13 ) {
+		$("#start").trigger('click');
+	}
+
+	// highlight start when start typing
+	$("#start").addClass('typing');
+});
+
 // set player name when user clicks start
 $("#start").on('click', function (e) {
 
