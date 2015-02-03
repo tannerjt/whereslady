@@ -86,42 +86,30 @@ h3 {
 	opacity : 0.7;
 }
 
-#success-modal, #oops-modal, #gameOver-modal, .modal-title{
+.modal-title {
+	padding: 5px;
+	font-size: 18px;
 	text-align: center;
 }
 
-#description {
-	font-size: 18px;
+#success-modal, #oops-modal, #gameOver-modal {
+	text-align: center;
 }
 
 #success-modal .modal-title {
 	 background-color: #ccffcc;
 	 border-radius: 5px;
-	 padding: 5px;
-}
-
-#success-modal .modal-body {
-	font-size: 18px;
-}
-
-#oops-modal .modal-body {
-	font-size: 18px;
 }
 
 #oops-modal .modal-title {
 	 background-color: #eb9999;
 	 border-radius: 5px;
-	 padding: 5px;
 }
 
 .loc-image {
 	padding-bottom: 5px;
 }
 
-#welcome-modal .modal-body p {
-	text-align: center;
-}
 
-#welcome-modal .modal-title {
-	padding: 5px;
-}
+
+
