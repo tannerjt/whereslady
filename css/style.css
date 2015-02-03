@@ -113,3 +113,15 @@ h3 {
 	 border-radius: 5px;
 	 padding: 5px;
 }
+
+.loc-image {
+	padding-bottom: 5px;
+}
+
+#welcome-modal .modal-body p {
+	text-align: center;
+}
+
+#welcome-modal .modal-title {
+	padding: 5px;
+}
