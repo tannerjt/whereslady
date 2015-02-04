@@ -21,7 +21,18 @@ var answers = [
 		"location" : [45.217463, -123.977510],
 		"image" : "pacific_city.jpg",
 		"credit" : "Photo by <a href='https://www.flickr.com/photos/misserion/1862526074/in/photolist-db22xz-8SsVNK-616s93-fMYiod-3QzW7w-fMG8TM-4JJtMZ-4F6Eyr-3eVpD9-fCFzfm-crCwPj-4FcHpo-a3wShK-a3wSXB-a3zFTY-6tT6RX-6gCzgj-6gCze7-a3zJty-gnNd4A-gnNxZu-gnNbXN-gnNbCu-gnNwPU-gnNwC1-gnNmwP-gnNaHo-gnNvSU-gnNkCz-gnNkdX-gnNk1x-gnNuMh-gnNuBs-gnN8PJ-gnNued-gnNiop-gnNGkV-gnNFRZ-gnNgYk-gnNEN6-gnNfWR-gnNfhz-gnN4mf-gnNpud-gnNp9J-gnNe1M-gnNdK6-gnNdpr-gnN2Lw-gnNBjc' target='_blank'>Misserion</a>",
-		"content" : "Pacific City is located in Tillamook County and home to Cape Kiwanda State  Natural Area.  The view from on top of Cape Kiwanda is worth the climb, with views of the coast and haystack rock.  View more on <a href='http://en.wikipedia.org/wiki/Pacific_City,_Oregon' target='_blank'>Wikipedia</a>"
+		"content" : "Pacific City is located in Tillamook County and home to Cape Kiwanda State Natural Area.  The view from on top of Cape Kiwanda is worth the climb, with views of the coast and haystack rock.  View more on <a href='http://en.wikipedia.org/wiki/Pacific_City,_Oregon' target='_blank'>Wikipedia</a>"
+	}, {
+		"description" : "She's exploring Crater Lake",
+		"hint" : [
+			"Is that a caldera lake?",
+			"You won't find any rivers flowing in or out of here",
+			"This is the deepest, bluest lake you'll find in the U.S."
+		],
+		"location" : [42.948402, -122.109780],
+		"image" : "crater_lake.jpg",
+		"credit" : "Photo by <a href='http://en.wikipedia.org/wiki/Crater_Lake#mediaviewer/File:Crater_lake_oregon.jpg' target='_blank'>Cropbot</a>",
+		"content" : "Crater Lake is famous for its deep blue color and water clarity.  It is the deepest lake in the United States.  View more on <a href='http://en.wikipedia.org/wiki/Crater_Lake' target='_blank'>Wikipedia</a>"
 	}
 
 ];
