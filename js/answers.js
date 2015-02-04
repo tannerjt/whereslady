@@ -43,7 +43,7 @@ var answers = [
 		"location" : [44.761776, -124.056830],
 		"image" : "punch_bowl.jpg",
 		"credit" : "Photo by <a href='http://en.wikipedia.org/wiki/Devils_Punch_Bowl_State_Natural_Area#mediaviewer/File:Devil%27s_Punchbowl_2011.JPG' target='_blank'>.jorgenev</a>",
-		"content" : "Devil's Punch Bowl is centered on a large bowl naturally carved in a rock headland which is partially open to the Pacific Ocean. Waves enter the bowl and often violently churn, swirl, and foam.[1] Outside the bowl, ocean conditions are attractive to surfers.  View more on <a href='http://en.wikipedia.org/wiki/Devils_Punch_Bowl_State_Natural_Area' target='_blank'>Wikipedia</a>"
+		"content" : "Devil's Punch Bowl is centered on a large bowl naturally carved in a rock headland which is partially open to the Pacific Ocean. Waves enter the bowl and often violently churn, swirl, and foam. Outside the bowl, ocean conditions are attractive to surfers.  View more on <a href='http://en.wikipedia.org/wiki/Devils_Punch_Bowl_State_Natural_Area' target='_blank'>Wikipedia</a>"
 	}
 
 ];
