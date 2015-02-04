@@ -33,6 +33,17 @@ var answers = [
 		"image" : "crater_lake.jpg",
 		"credit" : "Photo by <a href='http://en.wikipedia.org/wiki/Crater_Lake#mediaviewer/File:Crater_lake_oregon.jpg' target='_blank'>Cropbot</a>",
 		"content" : "Crater Lake is famous for its deep blue color and water clarity.  It is the deepest lake in the United States.  View more on <a href='http://en.wikipedia.org/wiki/Crater_Lake' target='_blank'>Wikipedia</a>"
+	}, {
+		"description" : "She's taking in the view at Devil's Punch Bowl",
+		"hint" : [
+			"Will there be punch served?",
+			"Check out all the whales you can see from here",
+			"It really does look like a bowl!"
+		],
+		"location" : [44.761776, -124.056830],
+		"image" : "punch_bowl.jpg",
+		"credit" : "Photo by <a href='http://en.wikipedia.org/wiki/Devils_Punch_Bowl_State_Natural_Area#mediaviewer/File:Devil%27s_Punchbowl_2011.JPG' target='_blank'>.jorgenev</a>",
+		"content" : "View more on <a href='http://en.wikipedia.org/wiki/Devils_Punch_Bowl_State_Natural_Area' target='_blank'>Wikipedia</a>"
 	}
 
 ];
